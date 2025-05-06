@@ -1,0 +1,113 @@
+35. Perform the data visualization operations using tableau.
+[Student Performance Analysis- Dataset: StudentsPerformance.csv]
+a. Visualize score distributions in Math, Reading, and Writing using histograms.
+b. Compare performance by gender, parental education, and lunch type.
+c. Create a KPI dashboard showing average scores and pass/fail rates by gender.
+d. Identify if students who took the test preparation course performed better.
+
+📥 Step 1: Import the Dataset
+Open Tableau.
+
+Click on “Connect → Text File”.
+
+Choose StudentsPerformance.csv.
+
+Tableau will load the dataset with columns like:
+
+gender, race/ethnicity, parental level of education, lunch, test preparation course, math score, reading score, writing score.
+
+a. Visualize Score Distributions Using Histograms
+📊 Sheet 1: Histogram for Math Scores
+Drag math score to Columns.
+
+Click the drop-down on math score → select Convert to Dimension.
+
+Drag Number of Records to Rows.
+
+On the toolbar, click Show Me → choose Histogram.
+
+Rename: Math Score Distribution
+
+Repeat for:
+
+📊 Sheet 2: reading score
+
+📊 Sheet 3: writing score
+
+b. Compare Performance by Gender, Parental Education, and Lunch Type
+📊 Sheet 4: Average Score by Gender
+Drag gender to Columns.
+
+Drag math score, reading score, and writing score to Rows.
+
+Right-click → Dual Axis and Synchronize Axis (optional).
+
+Convert to Bar Chart via Show Me.
+
+📊 Sheet 5: Avg Score by Parental Education
+Drag parental level of education to Columns.
+
+Drag math score, reading score, and writing score to Rows.
+
+Convert to Bar chart, or use a boxplot (via Show Me).
+
+📊 Sheet 6: Lunch Type Comparison
+Drag lunch to Columns.
+
+Drag average math score, reading score, and writing score to Rows.
+
+c. KPI Dashboard for Average Scores and Pass/Fail Rates by Gender
+🎯 Create Calculated Fields:
+Go to Analysis → Create Calculated Field.
+
+Name: Pass Math
+Formula: IF [math score] >= 40 THEN "Pass" ELSE "Fail" END
+
+Repeat for Reading & Writing (use 40 as passing mark or your own logic).
+
+Create KPI metrics:
+
+Average Math Score: Drag math score → Rows, change mark to Text.
+
+Drag gender to Columns to split by gender.
+
+Repeat for reading & writing.
+
+For pass/fail rate:
+
+Drag Pass Math to Rows and gender to Columns.
+
+Drag Number of Records to Text.
+
+Convert to Percentage: Right-click → Quick Table Calculation → Percent of Total.
+
+d. Compare Students Who Took Test Prep Course
+📊 Sheet 7: Test Prep Course Comparison
+Drag test preparation course to Columns.
+
+Drag average math score, reading score, and writing score to Rows.
+
+Convert to Bar chart.
+
+Use Color or Label to enhance clarity.
+
+🧩 Final Step: Create an Interactive Dashboard
+Click New Dashboard.
+
+Drag in all relevant sheets:
+
+Score Distributions
+
+Gender/Lunch comparisons
+
+KPI Metrics
+
+Test Prep Comparison
+
+Add Filters:
+
+Right-click on gender, lunch, etc. → Show Filter
+
+Use Apply to all worksheets using this data source
+
+Use Tiled layout and Text boxes to label each chart clearly.

@@ -1,0 +1,54 @@
+37.	Perform the data visualization operations using Sales order dataset using tableau. (Use Sample superstore Dataset)
+a.	Plot Sales by region
+b.	Plot year, month, quarterwise Sale
+c.	Plot yearwise sale vs profit
+
+Open Tableau and load the Sample Superstore dataset (comes pre-installed).
+
+Navigate to “Data” → Sample – Superstore to verify the dataset is active.
+
+🔷 a. Plot Sales by Region
+Go to a new worksheet.
+
+Drag Region to Columns.
+
+Drag Sales to Rows.
+
+Choose Bar Chart from the “Show Me” panel.
+
+Optional: Drag Region to Color for a colorful chart.
+
+🔷 b. Plot Year, Month, Quarter-wise Sale
+Go to a new worksheet.
+
+Drag Order Date to Columns → Click dropdown → Select Year, then click + icon to expand → also select Quarter and Month.
+
+Drag Sales to Rows.
+
+You now see Sales across Year → Quarter → Month.
+
+Use line chart or bar chart based on preference (Show Me panel).
+
+Optional: Add Region to Color for comparison by region.
+
+🔷 c. Plot Year-wise Sales vs Profit
+New worksheet.
+
+Drag Order Date to Columns → select Year.
+
+Drag both Sales and Profit to Rows → you’ll get 2 lines.
+
+Alternatively: Use the dual-axis:
+
+Right-click second axis → Dual Axis.
+
+Right-click Y-axis → Synchronize Axis.
+
+Drag Measure Names to Color for distinction.
+
+📋 Build a Dashboard (Optional)
+Click Dashboard → New Dashboard.
+
+Drag the 3 worksheets into layout.
+
+Add filter(s) like Region or Category to control views.

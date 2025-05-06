@@ -1,0 +1,78 @@
+34.Perform the data visualization operations using tableau.
+[Sales Dashboard for a Retail Store- Dataset: Superstore (available in Tableau)]
+a. Create an interactive dashboard showing total sales, profit, and quantity by region and category.
+b. Use filters to drill down by State, Segment, and Sub-Category.
+c. Build a map visualization of sales by state with color-coded profit margins.
+d. Identify top 10 products by profit and by sales volume.
+give very specific step by step 
+
+📦 (Dataset: Superstore)
+Load it from Tableau:
+
+Open Tableau.
+
+On the home screen → under Sample Workbooks → open Superstore.
+
+If it's not visible, go to Help → Sample Workbooks → Superstore.
+
+a. Create an Interactive Dashboard showing Total Sales, Profit, and Quantity by Region and Category
+
+📊 Sheet 1: Sales by Region & Category
+Drag Region to Columns.
+Drag Sales to Rows.
+Drag Category to Color.
+Right-click the y-axis → Add Reference Line if you want sales targets.
+Rename the sheet: "Sales by Region & Category"
+
+📊 Sheet 2: Profit by Region & Category
+Drag Region to Columns.
+Drag Profit to Rows.
+Drag Category to Color.
+Rename this sheet: "Profit by Region & Category"
+
+📊 Sheet 3: Quantity by Region & Category
+Drag Region to Columns.
+Drag Quantity to Rows.
+Drag Category to Color.
+Rename this: "Quantity by Region & Category"
+
+b. Use Filters to Drill Down by State, Segment, and Sub-Category
+For each sheet:
+
+Drag State, Segment, and Sub-Category to the Filters shelf.
+Right-click on each filter → Show Filter.
+
+This will show dropdowns in each sheet that allow you to drill down.
+
+c. Build a Map Visualization of Sales by State with Color-Coded Profit Margins
+📍 Sheet 4: Map of Sales & Profit Margin
+Drag State to Detail (on Marks card).
+Tableau will automatically convert it to a map.
+Drag Sales to Size.
+Drag Profit to Color → right-click → use Diverging Color (e.g., red to green).
+Tooltip will automatically show State, Sales, and Profit.
+Rename this: "Map - Sales & Profit Margin"
+
+d. Identify Top 10 Products by Profit and Sales Volume
+📊 Sheet 5: Top 10 Products by Profit
+Drag Product Name to Rows.
+Drag Profit to Columns.
+Click the filter on Product Name → choose Top → By Field → Top 10 by Profit.
+Sort in descending order.
+
+📊 Sheet 6: Top 10 Products by Sales
+Duplicate the above sheet.
+Change the filter to Top 10 by Sales.
+Rename these sheets accordingly.
+
+🎛️ Final Step: Create a Dashboard
+Click New Dashboard.
+Drag all sheets (Sales, Profit, Quantity, Map, Top 10) onto the canvas.
+Arrange layout with horizontal or vertical containers.
+Add filters from one sheet, then use the filter dropdown and click “Apply to All Using This Data Source.”
+
+Optional:
+
+Add KPIs (total sales, profit, etc.) using Text boxes or Summary cards.
+
+Add interactivity by turning on "Use as Filter" for key visualizations.

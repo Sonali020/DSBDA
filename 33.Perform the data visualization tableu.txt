@@ -1,0 +1,90 @@
+33.	Perform the data visualization operations using tableau. [Iris.csv]
+a.	Create a scatter plot comparing petal length and sepal length by species with color coding.
+b.	Use boxplots or violin plots to compare the distribution of each numeric feature across species.
+c.	Build a heatmap to visualize correlations between all four numeric features.
+d.	Create a bar chart showing the average sepal length, sepal width, petal length, and petal width for each species.
+e.	Use a pie chart or donut chart to show the proportion of each Iris species in the dataset.
+
+Step-by-Step Guide for Data Visualization in Tableau using Iris.csv
+To perform these operations in Tableau, follow these instructions:
+
+1. Load the Dataset into Tableau
+Open Tableau Desktop.
+
+Select File > Open and load the Iris.csv dataset into Tableau.
+
+a. Scatter Plot: Petal Length vs Sepal Length by Species (Color Coded)
+Drag Sepal Length to the Columns shelf.
+
+Drag Petal Length to the Rows shelf.
+
+Drag Species to the Color shelf under the Marks card to differentiate the species by color.
+
+You should now see a scatter plot comparing Petal Length and Sepal Length with color-coded points for each species.
+
+Optional: You can adjust the color scheme using the Color legend for better visibility.
+
+b. Boxplots or Violin Plots: Compare Distribution of Numeric Features Across Species
+Drag Species to the Columns shelf.
+
+Drag any numeric field (e.g., Sepal Length, Petal Length) to the Rows shelf.
+
+In the Marks card, change the chart type to Box Plot or Violin Plot (depending on your preference). You may need to select the type from the drop-down menu in the Marks card.
+
+Repeat this process for other numeric fields to compare their distributions across species.
+
+Optional: Add a trend line or reference line to show central tendencies.
+
+c. Heatmap: Visualize Correlations Between Numeric Features
+Drag Sepal Length, Sepal Width, Petal Length, and Petal Width into the Columns shelf.
+
+Drag the same features into the Rows shelf.
+
+Change the Marks Type to Square.
+
+Click on Color on the Marks card and drag a Measure of Central Tendency (e.g., Correlation or Sum) into it to adjust color by the correlation strength.
+
+Adjust the Color Scale to indicate correlation strength visually (e.g., from red for strong negative to blue for strong positive).
+
+d. Bar Chart: Average Sepal Length, Sepal Width, Petal Length, and Petal Width for Each Species
+Drag Species to the Columns shelf.
+
+Drag Sepal Length, Sepal Width, Petal Length, and Petal Width to the Rows shelf.
+
+Right-click on each of these fields and select Measure > Average to show the average of each feature.
+
+Convert the chart type to Bar (if it is not automatically selected).
+
+Optional: Add labels to the bars for clearer comparison.
+
+e. Pie Chart or Donut Chart: Proportion of Each Iris Species
+Drag Species to the Columns shelf.
+
+Drag Number of Records (or COUNT(Species)) to the Rows shelf.
+
+Change the chart type to Pie Chart by selecting it from the Marks dropdown.
+
+To create a Donut Chart, create a dual-axis chart:
+
+Drag Number of Records again to the Rows shelf.
+
+Change one of the axes to Circle (donut) by adjusting the chart type in the Marks card.
+
+Right-click on the second axis and select Synchronize Axis.
+
+Format the chart to remove the center circle.
+
+f. Interactive Dashboard: Filters and Visualizations to Update Species Prediction
+Create multiple sheets with the visualizations you want (scatter plot, boxplots, heatmap, etc.).
+
+Create a new Dashboard by clicking on the Dashboard tab and selecting New Dashboard.
+
+Drag and drop the individual sheets onto the dashboard area.
+
+To add filters, drag the Species field (or other features) to the Filters shelf in your dashboard.
+
+Enable interactive filters so that when you select a value, the visualizations update automatically.
+
+Add Range filters for numeric features like Sepal Length and Petal Width to dynamically adjust the range of values.
+
+Customize the layout to create an easy-to-read, interactive interface with proper titles, legends, and filters.

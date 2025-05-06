@@ -1,0 +1,65 @@
+36. Perform the data visualization operations using tableau.
+    \[Real Estate Market Dashboard- Dataset: Kaggle housing datasets housing.csv]
+    a.	Compare median listing prices by region and time using line graphs.
+    b.	Use a scatter plot to show price vs. square footage.
+    c.	Filter views by property type and city.
+    d.	Visualize price trends over time and identify areas with highest growth.
+
+
+📈 a. Median Listing Prices by Region (Ocean Proximity)
+Open a new Sheet.
+
+Drag Ocean Proximity to Columns.
+
+Drag Median House Value to Rows → right-click it → Measure → Median.
+
+Choose Bar Chart type from Marks card.
+
+You now have a price comparison by region.
+
+📉 b. Scatter Plot: Median House Value vs. Total Rooms
+Drag Total Rooms to Columns.
+
+Drag Median House Value to Rows.
+
+Drag Ocean Proximity to Color to differentiate region.
+
+Set Mark Type to Circle for a clean scatter plot.
+
+🔍 c. Filters: Ocean Proximity (Region), Median Income
+Drag Ocean Proximity to Filters pane → check all → Right-click → Show Filter.
+
+Drag Median Income to Filters → choose a range or set up a slider → Show Filter.
+
+📊 d. Map Visualization with Price
+Create a Map: Median House Value by Location
+Drag Longitude to Columns, Latitude to Rows.
+
+Tableau will auto-detect as a map.
+
+Drag Median House Value to Color.
+
+Drag Ocean Proximity to Detail to show in tooltips.
+
+BONUS: Identify Areas with Highest Growth (Optional, without time)
+Since there's no date, use Housing Median Age as a pseudo-time dimension:
+
+Create bins: Right-click Housing Median Age → Create → Bins (size = 5 or 10).
+
+Use this bin in a bar or line graph to observe value trends.
+
+📋 Build Dashboard
+Click Dashboard → New Dashboard.
+
+Drag in your created sheets:
+
+Median Value by Region
+
+Scatter Plot
+
+Map
+
+Drag filters (Ocean Proximity, Median Income) onto the dashboard.
+
+Set “Apply to all using this data source” for filters.
+

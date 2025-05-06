@@ -1,0 +1,63 @@
+38. Perform the data visualization operations using Sales order dataset using tableau. (Sample superstore Dataset)
+    a.	Plot Sales by region
+    b.	Plot year, month, quarterwise Sale
+    c.	Plot yearwise sale vs profit
+    d.	Create dashboard
+
+🔹 a. Plot Sales by Region
+Open a new worksheet
+
+Drag Region to Columns
+
+Drag Sales to Rows
+
+You will see a bar chart of sales by region
+
+Rename the sheet to Sales by Region
+
+🔹 b. Plot Year, Month, Quarter-wise Sales
+Open a new worksheet
+
+Drag Order Date to Columns
+
+Click on the dropdown and select Year, then Quarter, then Month (you can drag multiple or use hierarchy)
+
+Drag Sales to Rows
+
+You’ll see a line chart showing sales trends by time
+
+Rename the sheet to Timewise Sales
+
+🔹 c. Plot Year-wise Sales vs Profit
+Create another worksheet
+
+Drag Order Date to Columns
+
+Right-click → Select Year
+
+Drag Sales to Rows
+
+Drag Profit also to Rows (this creates two lines on one graph)
+
+Alternatively, you can drag Profit to the right axis for dual-axis view
+
+Rename the sheet to Sales vs Profit
+
+🔹 d. Create Dashboard
+Click on Dashboard → New Dashboard
+
+From the left pane, drag and drop:
+
+Sales by Region
+
+Timewise Sales
+
+Sales vs Profit
+
+Resize and arrange as needed
+
+To add filters:
+
+Click on a worksheet in the dashboard → click the dropdown arrow on top-right → Filters → Select fields like Region, Category, Segment if needed
+
+Choose "Apply to All Using This Data Source"

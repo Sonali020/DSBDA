@@ -1,0 +1,57 @@
+39. Perform the data visualization operations using tableau.  (iris\_data\_sample)
+    a.	Scatter Plot of SepalLength by SepalWidth
+    b.	Show species wise distribution
+    c.	Visualize correlation of PetalLength and PetalWidth
+
+🔹 a. Scatter Plot of SepalLength by SepalWidth
+Open a new worksheet.
+
+Drag SepalLengthCm to Columns.
+
+Drag SepalWidthCm to Rows.
+
+Drag Species to Color (under Marks card).
+
+From the Marks type, ensure it's set to Scatter Plot (Circle).
+
+Rename the sheet to Sepal Scatter.
+
+🔹 b. Show Species-wise Distribution
+Option 1: Bar Chart (Count of Species)
+Create a new worksheet.
+
+Drag Species to Columns.
+
+Drag Species again to Rows — Tableau will count the number of entries for each species.
+
+Optional: Drag Species to Color to distinguish them.
+
+Rename this sheet to Species Distribution.
+
+🔹 c. Visualize Correlation of PetalLength and PetalWidth
+Open another worksheet.
+
+Drag PetalLengthCm to Columns.
+
+Drag PetalWidthCm to Rows.
+
+Drag Species to Color to view correlation across different species.
+
+Set Marks type to Circle.
+
+You should see a clustered or linear pattern, indicating correlation.
+
+Rename the sheet to Petal Correlation.
+
+✅ Optional: Create a Dashboard
+Click on Dashboard → New Dashboard.
+
+Drag and drop all 3 sheets:
+
+Sepal Scatter
+
+Species Distribution
+
+Petal Correlation
+
+Add filters or interactivity if needed.
